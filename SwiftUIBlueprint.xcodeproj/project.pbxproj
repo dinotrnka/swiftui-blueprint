@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		315F4EC1280EE4B500A1FBFC /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315F4EC0280EE4B500A1FBFC /* LoginScreen.swift */; };
+		315F4EC3280EE4C600A1FBFC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315F4EC2280EE4C600A1FBFC /* LoginViewModel.swift */; };
+		315F4EC5280EE4E300A1FBFC /* LoginAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315F4EC4280EE4E300A1FBFC /* LoginAction.swift */; };
+		315F4EC7280EE4FE00A1FBFC /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315F4EC6280EE4FE00A1FBFC /* LoginRequest.swift */; };
+		315F4EC9280EE50600A1FBFC /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315F4EC8280EE50600A1FBFC /* LoginResponse.swift */; };
 		31F8159D280EA982004201DE /* SwiftUIBlueprintApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F8159C280EA982004201DE /* SwiftUIBlueprintApp.swift */; };
 		31F8159F280EA982004201DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F8159E280EA982004201DE /* ContentView.swift */; };
 		31F815A1280EA98A004201DE /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31F815A0280EA98A004201DE /* AppIcon.xcassets */; };
@@ -18,6 +23,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		315F4EC0280EE4B500A1FBFC /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		315F4EC2280EE4C600A1FBFC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		315F4EC4280EE4E300A1FBFC /* LoginAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAction.swift; sourceTree = "<group>"; };
+		315F4EC6280EE4FE00A1FBFC /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		315F4EC8280EE50600A1FBFC /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		31F81599280EA982004201DE /* SwiftUIBlueprint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIBlueprint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31F8159C280EA982004201DE /* SwiftUIBlueprintApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBlueprintApp.swift; sourceTree = "<group>"; };
 		31F8159E280EA982004201DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -202,6 +212,7 @@
 		31F815C4280EB556004201DE /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				315F4EC4280EE4E300A1FBFC /* LoginAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -209,6 +220,8 @@
 		31F815C5280EB55E004201DE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				315F4EC6280EE4FE00A1FBFC /* LoginRequest.swift */,
+				315F4EC8280EE50600A1FBFC /* LoginResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -223,6 +236,7 @@
 		31F815C7280EB566004201DE /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				315F4EC2280EE4C600A1FBFC /* LoginViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -230,6 +244,7 @@
 		31F815C8280EB56B004201DE /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				315F4EC0280EE4B500A1FBFC /* LoginScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -436,8 +451,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				31F815BA280EABD7004201DE /* StringExtensions.swift in Sources */,
+				315F4EC1280EE4B500A1FBFC /* LoginScreen.swift in Sources */,
 				31F8159F280EA982004201DE /* ContentView.swift in Sources */,
+				315F4EC3280EE4C600A1FBFC /* LoginViewModel.swift in Sources */,
 				31F8159D280EA982004201DE /* SwiftUIBlueprintApp.swift in Sources */,
+				315F4EC7280EE4FE00A1FBFC /* LoginRequest.swift in Sources */,
+				315F4EC9280EE50600A1FBFC /* LoginResponse.swift in Sources */,
+				315F4EC5280EE4E300A1FBFC /* LoginAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
