@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		31F8159D280EA982004201DE /* SwiftUIBlueprintApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F8159C280EA982004201DE /* SwiftUIBlueprintApp.swift */; };
 		31F8159F280EA982004201DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F8159E280EA982004201DE /* ContentView.swift */; };
-		31F815A1280EA98A004201DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31F815A0280EA98A004201DE /* Assets.xcassets */; };
+		31F815A1280EA98A004201DE /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31F815A0280EA98A004201DE /* AppIcon.xcassets */; };
 		31F815A4280EA98A004201DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31F815A3280EA98A004201DE /* Preview Assets.xcassets */; };
 		31F815AE280EAB18004201DE /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 31F815AD280EAB18004201DE /* .swiftlint.yml */; };
 		31F815B3280EAB77004201DE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31F815B5280EAB77004201DE /* Localizable.strings */; };
@@ -21,7 +21,7 @@
 		31F81599280EA982004201DE /* SwiftUIBlueprint.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIBlueprint.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31F8159C280EA982004201DE /* SwiftUIBlueprintApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIBlueprintApp.swift; sourceTree = "<group>"; };
 		31F8159E280EA982004201DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		31F815A0280EA98A004201DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31F815A0280EA98A004201DE /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
 		31F815A3280EA98A004201DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		31F815AD280EAB18004201DE /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		31F815B4280EAB77004201DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -49,8 +49,9 @@
 			children = (
 				31F8159B280EA982004201DE /* SwiftUIBlueprint */,
 				31F8159A280EA982004201DE /* Products */,
-				CEB64D8C5F10F11277A759B0 /* Pods */,
+				31F815D0280EB5D9004201DE /* Tests */,
 				CAAFE1D326168123E35E4C14 /* Frameworks */,
+				CEB64D8C5F10F11277A759B0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,12 +67,10 @@
 			isa = PBXGroup;
 			children = (
 				31F815B7280EABC6004201DE /* Code */,
-				31F815AF280EAB57004201DE /* SupportingFiles */,
-				31F8159C280EA982004201DE /* SwiftUIBlueprintApp.swift */,
-				31F8159E280EA982004201DE /* ContentView.swift */,
-				31F815A0280EA98A004201DE /* Assets.xcassets */,
+				31F815CE280EB5BF004201DE /* Config */,
+				31F815CF280EB5C8004201DE /* Resources */,
 				31F815A2280EA98A004201DE /* Preview Content */,
-				31F815AD280EAB18004201DE /* .swiftlint.yml */,
+				31F815AF280EAB57004201DE /* SupportingFiles */,
 			);
 			path = SwiftUIBlueprint;
 			sourceTree = "<group>";
@@ -88,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				31F815B0280EAB61004201DE /* Localization */,
+				31F8159E280EA982004201DE /* ContentView.swift */,
+				31F8159C280EA982004201DE /* SwiftUIBlueprintApp.swift */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -103,6 +104,7 @@
 		31F815B7280EABC6004201DE /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				31F815BB280EB42D004201DE /* Features */,
 				31F815B8280EABCA004201DE /* Utilities */,
 			);
 			path = Code;
@@ -114,6 +116,188 @@
 				31F815B9280EABD7004201DE /* StringExtensions.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		31F815BB280EB42D004201DE /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				31F815BE280EB43B004201DE /* Common */,
+				31F815BC280EB434004201DE /* Login */,
+				31F815BD280EB438004201DE /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		31F815BC280EB434004201DE /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				31F815C4280EB556004201DE /* Actions */,
+				31F815C5280EB55E004201DE /* Models */,
+				31F815C8280EB56B004201DE /* Screens */,
+				31F815C7280EB566004201DE /* ViewModels */,
+				31F815C6280EB563004201DE /* Views */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		31F815BD280EB438004201DE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				31F815C9280EB574004201DE /* Actions */,
+				31F815CA280EB578004201DE /* Models */,
+				31F815CC280EB580004201DE /* Screens */,
+				31F815CB280EB57C004201DE /* ViewModels */,
+				31F815CD280EB585004201DE /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		31F815BE280EB43B004201DE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				31F815C3280EB54B004201DE /* Actions */,
+				31F815C0280EB53F004201DE /* Models */,
+				31F815C2280EB547004201DE /* Screens */,
+				31F815C1280EB543004201DE /* ViewModels */,
+				31F815BF280EB538004201DE /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		31F815BF280EB538004201DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		31F815C0280EB53F004201DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		31F815C1280EB543004201DE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		31F815C2280EB547004201DE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		31F815C3280EB54B004201DE /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		31F815C4280EB556004201DE /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		31F815C5280EB55E004201DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		31F815C6280EB563004201DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		31F815C7280EB566004201DE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		31F815C8280EB56B004201DE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		31F815C9280EB574004201DE /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		31F815CA280EB578004201DE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		31F815CB280EB57C004201DE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		31F815CC280EB580004201DE /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		31F815CD280EB585004201DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		31F815CE280EB5BF004201DE /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				31F815AD280EAB18004201DE /* .swiftlint.yml */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		31F815CF280EB5C8004201DE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				31F815D1280EB715004201DE /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		31F815D0280EB5D9004201DE /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		31F815D1280EB715004201DE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				31F815A0280EA98A004201DE /* AppIcon.xcassets */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		CAAFE1D326168123E35E4C14 /* Frameworks */ = {
@@ -197,7 +381,7 @@
 				31F815AE280EAB18004201DE /* .swiftlint.yml in Resources */,
 				31F815B3280EAB77004201DE /* Localizable.strings in Resources */,
 				31F815A4280EA98A004201DE /* Preview Assets.xcassets in Resources */,
-				31F815A1280EA98A004201DE /* Assets.xcassets in Resources */,
+				31F815A1280EA98A004201DE /* AppIcon.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +404,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" --config \"$SRCROOT/SwiftUIBlueprint/Config/.swiftlint.yml\"\n\n";
 		};
 		D4FCF99BF2F539957AC93C9D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
