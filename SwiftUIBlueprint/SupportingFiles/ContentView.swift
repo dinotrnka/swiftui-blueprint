@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
         Text("ContentView.WelcomeMessage".localized(arguments: "Peter"))
             .padding()
     }
