@@ -18,8 +18,9 @@ class LoginViewModel: ObservableObject {
                 username: username,
                 password: password
             )
-        ).call { _ in
+        ).call { response in
             // Login successful, navigate to the Home screen
+            print("Access token", response.data.accessToken)
         }
     }
 }
