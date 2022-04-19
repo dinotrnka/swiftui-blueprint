@@ -14,7 +14,7 @@ struct LoginAction {
     func call(completion: @escaping (LoginResponse) -> Void) {
         
         let scheme: String = "https"
-        let host: String = "base_url"
+        let host: String = "72a29288-615d-4ed4-8f9a-21b224056d7f.mock.pstmn.io" // Put your mock server url here
         let path = "/login"
         
         var components = URLComponents()
@@ -31,6 +31,7 @@ struct LoginAction {
         
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
+        request.addValue("true", forHTTPHeaderField: "x-mock-match-request-body")
         
         do {
             request.httpBody = try JSONEncoder().encode(parameters)
