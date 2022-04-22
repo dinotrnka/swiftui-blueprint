@@ -19,8 +19,10 @@ class LoginViewModel: ObservableObject {
                 password: password
             )
         ).call { response in
-            // Login successful, navigate to the Home screen
-            print("Access token", response.data.accessToken)
+            Auth.shared.setCredentials(
+                accessToken: response.data.accessToken,
+                refreshToken: response.data.refreshToken
+            )
         }
     }
 }
